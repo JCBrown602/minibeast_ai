@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MinibeastAI</title>
+</head>
+<body>
+    <h1>Upload an Image for Identification</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction Results:</h2>
+        <ul>
+        {% for label, conf in zip(prediction.top_3, prediction.confidence) %}
+            <li>{{ label }} - {{ '%.2f'|format(conf * 100) }}%</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>

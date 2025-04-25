@@ -99,5 +99,5 @@ Contributions are welcome! Whether it's fixing bugs, improving performance, or a
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 

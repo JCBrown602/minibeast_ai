@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.flaskenv
+
+# Flask instance folder
+instance/
+
+# Static file caches
+*.log
+*.pot
+*.pyc
+
+# Test / coverage reports
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# IDE settings (optional but recommended)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS system files
+.DS_Store
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Local database (if using SQLite for development)
+*.sqlite3
+*.db
+
+# Grip server cache (if using grip to preview README.md)
+.grip/
+
+# Misc
+*.bak
+*.swp

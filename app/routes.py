@@ -19,4 +19,4 @@ def index():
             filepath = os.path.join("static/uploads", filename)
             image.save(filepath)
             prediction = predict_image(filepath)
-    return render_template("index.html", prediction=prediction)
+    return render_template("index.html", prediction=prediction, zip=zip)

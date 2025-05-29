@@ -10,4 +10,4 @@ app = create_app()
 #    return "Hello from MinibeastAI!"
 
 if __name__ == "__main__":
-    app.run
+    app.run(debug=True)
